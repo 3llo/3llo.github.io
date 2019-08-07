@@ -1,0 +1,465 @@
+/*
+ * CSS style that is applicable on the whole page.
+ * It sets following CSS on the page:
+ * 1. Sets all text color to black
+ * 2. Sets font-size to .9em
+ * 3. Sets all links color to blue
+ * 4. Adds padding between all nav links
+ * 5. Adds 24px margin between nav links
+ * 6. Adds spacing of 30px between headings on the page
+ * 7. Sets the height of Ingredients Calculator box to 25px
+ * 8. Sets radius of the Ingredients Calculator box to 4px
+ */
+:root {
+  --p-color: #393E43;
+  --p--font-size: .9em;
+  --a-color: #167FFC;
+
+  --main-nav-a-padding: 10px 4px;
+  --main-nav-a-left-margin: 24px;
+
+  --content-spacing: 30px 0;
+
+  --input-height: 25px;
+
+  --radius: 4px;
+}
+
+/*
+ * Makes the height of the page to 100% i.e. you'll see the website on whole page.
+ */
+html, body {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+/*
+ * Sets the margin and padding of the whole page to 0. This doesn't change the margin/padding set by :root CSS property.
+ */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * CSS applied on the body section of the page. Body section is the whole visible section of the page.
+ * Font is set to 'Open Sans', width of the body is set to 100% i.e. it will consume the whole page.
+ */
+body {
+  font-family: 'Open Sans', sans-serif, Helvetica;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/*
+ * CSS applied on all lists item on the page like Ingredients list, Instructions list etc.
+ * list-style-position signifies the position of the items listed in bullet points.
+ */
+ul, ol {
+  list-style-position: inside;
+}
+
+/*
+ * CSS applied on all paragraph , list items and label (Heading before any input element) tags.
+ * It sets the weight of font (boldness) of paragraph, list items and label to 300.
+ */
+p, li, label {
+  font-size: var(--p--font-size);
+  color: var(--p-color);
+  font-weight: 300;
+}
+
+/*
+ * This CSS reassigns all links color to blue. It was already set to blue in :root CSS.
+ */
+a {
+  color: var(--a-color);
+}
+
+/*
+ * CSS styling for all headings on the page.
+ * It sets boldness of all headings to 700, color to a shade of black and bottom spacing from next element to 20px.
+ */
+h1, h2, h3, h4 {
+  font-weight: 700;
+  color: #4A5F71;
+  margin-bottom: 20px;
+}
+
+/*
+ * CSS styling for webpage logo and nav links.
+ * The flex-shrink property specifies how the links and image will shrink relative to the rest of the links in the nav.
+ */
+header {
+  flex-shrink: 0;
+}
+
+/*
+ * This CSS makes whole page's CSS flexible respective to other elements on the page.
+ */
+.content {
+  flex: 1 0 auto;
+}
+
+/*
+ * CSS styling for footer section of the page.
+ * The flex-shrink property specifies how the links and image will shrink relative to the rest of the links in the nav.
+ */
+footer {
+  flex-shrink: 0;
+}
+
+/*
+ * CSS styling for webpage heading.
+ */
+.container {
+  margin: 0 auto;
+  max-width: 1024px;
+  width: 80%;
+}
+
+/*
+ * CSS styling for footer section of the page.
+ * It sets backgroung color of footer section to some shade of black, aligns the text into center and sets the margin
+ * and padding.
+ */
+footer {
+  background-color: #4A5F71;
+  text-align: center;
+  padding: 30px 0;
+  margin-top: 40px;
+}
+
+/*
+ * CSS styling for the text in the footer section.
+ */
+.footerText {
+  color: #fff;
+}
+
+/*
+ * CSS styling for webpage logo and navigation links.
+ */
+.mainNav {
+  padding: 8px 0;
+}
+
+/*
+ * More CSS styling for webpage logo and navigation links.
+ */
+.mainNav-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/*
+ * CSS styling specifically for navigation links section.
+ */
+.navMenu {
+  margin-bottom: 6px;
+  display: flex;
+}
+
+/*
+ * CSS styling for each nagivation link container.
+ */
+.navMenu__item {
+  list-style: none;
+  margin-left: var(--main-nav-a-left-margin);
+}
+
+/*
+ * CSS Styling for currently selected navigation link.
+ * It changes the color of the selected navigation link to some shade of black, sets the boldness to 600 and adds
+ * a border at the bottom of the link.
+ */
+.navMenu__item--active a, .navMenu__item a:hover {
+  color: #4A5F71;
+  font-weight: 600;
+  border-bottom: 2px solid #4A5F71;
+}
+
+/*
+ * CSS styling for each navigation link.
+ */
+.navMenu__item a{
+  color: var(--p-color);
+  text-decoration: none;
+  font-size: 16px;
+  padding: var(--main-nav-a-padding);
+}
+
+/*
+ * This CSS styling is redundant as the corresponding HTML element is not present in the code.
+ */
+.navMenu-divider {
+  padding: var(--main-nav-a-padding);
+  margin-left: var(--main-nav-a-left-margin);
+}
+
+/*
+ * CSS styling for website heading and image container
+ */
+.hero {
+  background-image: url('../images/pexels-photo.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 10% 0;
+  position: relative;
+  z-index: -1;
+}
+
+/*
+ * CSS styling for webpage heading container. It sets the width of the heading to 40% only.
+ */
+.hero__heading {
+  width: 40%;
+}
+
+/*
+ * CSS styling for webpage heading text.
+ */
+.hero__heading p {
+  color: #C7D3DD;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  margin: 4px 0;
+}
+
+/*
+ * CSS styling for heading tag inside webpage heading.
+ */
+.hero__heading h1 {
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-size: 3em;
+  color: #fff;
+  margin: 0;
+  font-weight: 700;
+}
+
+/*
+ * CSS styling for webpage subheading inside the box.
+ */
+.boxText {
+  background: #fff;
+  --hero-text-box-shadow: 2px 6px 15px 0px rgba(0,0,0,0.31);
+  box-shadow: var(--hero-text-box-shadow);
+  -webkit-box-shadow: var(--hero-text-box-shadow);
+  -moz-box-shadow: var(--hero-text-box-shadow);
+  padding: 25px 25px;
+}
+
+/*
+ * CSS styling for webpage subheading inside the box.
+ */
+.overlapHero {
+  margin-top: -50px;
+}
+
+/*
+ * Container which divides the page in two sections. Left section containing mini details of all recipes
+ * and right section containing the selected recipe content.
+ */
+.section-2-column {
+  margin: var(--content-spacing);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/*
+ * CSS styling for left section container of recipe details.
+ */
+.sideNavigation {
+  background: #F8F8F8;
+  overflow-y: auto;
+  width: 30%;
+  padding: 20px 10px;
+  max-height: 1200px;
+}
+
+/*
+ * CSS styling for container which holds mini details about all recipes in the left section.
+ */
+.recipesNav {
+  margin-bottom: 10px;
+}
+
+/*
+ * CSS styling for each card in the left section of webpage.
+ */
+.recipeNav__item {
+  list-style: none;
+}
+
+/*
+ * CSS styling for each card in the left section of webpage.
+ */
+.card {
+  cursor: pointer;
+  background: #fff;
+  border: 1px solid #C7D3DD;
+  margin-top: 20px;
+  color: #4A5F71;
+  width: 100%;
+  transition: .3s ease;
+}
+
+/*
+ * CSS styling for thumbnail image on each card.
+ */
+.card-thumb {
+  width: 100%;
+}
+
+/*
+ * CSS styling for title on each card.
+ */
+.card-title {
+  font-weight: 300;
+  color: var(--p-color);
+  margin-bottom: 2px;
+}
+
+/*
+ * CSS styling for description on each card.
+ */
+.card-content {
+  margin: 10px;
+}
+
+/*
+ * CSS styling for "number of people" value on each card.
+ */
+.card-footer {
+  margin: 10px;
+}
+
+/*
+ * CSS styling for selected card in the left section and styling when any card is hovered.
+ */
+.card--active, .card:hover {
+  border-color: var(--a-color);
+  --card-box-shadow: 2px 6px 15px 0px rgba(0,0,0,0.31);
+  box-shadow: var(--card-box-shadow);
+  -webkit-box-shadow: var(--card-box-shadow);
+  -moz-box-shadow: var(--card-box-shadow);
+}
+
+/*
+ * CSS styling for right section of the recipe details holding recipe content.
+ * It sets the width of that section to 60%.
+ */
+.recipeDetail {
+  width: 60%;
+}
+
+/*
+ * CSS styling for image in the recipe content.
+ */
+.recipeDescriptionImage {
+  width: 100%;
+}
+
+/*
+ * CSS styling for description in the recipe content.
+ * It adds a spacing of 20px between the recipe content and the element above it.
+ */
+.recipeDescription {
+  margin-top: 20px;
+}
+
+/*
+ * CSS styling for ingredients and instructions container.
+ */
+.recipeIngredients, .recipeInstructions {
+  margin: var(--content-spacing) 0;
+}
+
+/*
+ * CSS styling for bullet points in instructions list.
+ */
+.recipeInstructions ol li {
+  margin-top: 20px;
+}
+
+/*
+ * CSS styling for Ingredients Calculator container.
+ */
+.ingredientsCalculator {
+  margin: var(--content-spacing) 0;
+  background: #fff;
+  --ingredient-box-shadow: 2px 6px 20px 0px rgba(0,0,0,0.11);
+  box-shadow: var(--ingredient-box-shadow);
+  -webkit-box-shadow: var(--ingredient-box-shadow);
+  -moz-box-shadow: var(--ingredient-box-shadow);
+  padding: 20px;
+  display: inline-block;
+}
+
+/*
+ * CSS styling for Ingredients calculator form. The form consists of Input box and the button.
+ */
+.ingredientsCalculator__form{
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/*
+ * CSS styling for Input box where user enters "number of people" and the label which says "Cooking for".
+ */
+.ingredientsCalculator__form__input, .ingredientsCalculator__form__label {
+  margin-right: 10px;
+}
+
+/*
+ * CSS styling for all input and button elements on the page.
+ * There is a single input element on the page to enter "numbre of people" and single button "Calculate" which calculates
+ * the revised ingredients for entered "number of people".
+ */
+input, .button  {
+  padding: 10px 4px;
+  border-radius: var(--radius);
+  outline: none;
+  border: 1px solid #C7D3DD;
+  font-size: .9em;
+}
+
+/*
+ * CSS styling for all buttons on the page.
+ */
+.button {
+  border: 1px solid #C7D3DD;
+  padding: 10px 25px;
+  cursor: pointer;
+  font-weight: 400;
+}
+
+/*
+ * CSS styling for "Calculate" button in the Ingredients calculator container.
+ */
+.red-btn {
+  --color-red: #FF4C4C;
+  background-color: var(--color-red);
+  border-color: var(--color-red);
+  color: #fff;
+  transition: .3s ease;
+}
+
+/*
+ * CSS styling for "Calculate" button when user hover over it.
+ */
+.red-btn:hover {
+  --hover-color: #fc2e2e;
+  background-color: var(--hover-color);
+  border-color: var(--color-red);
+}
+

@@ -1,0 +1,135 @@
+/*
+ * This class modifies some of the CSS styling mentioned in styles.css file so that the webpage 
+ * can be rendered easily on Mobile devices.
+ * It modifies the CSS by taking into account the size of the browser window.
+ */
+
+
+ /*
+  * This CSS styling is applied only when the browser window is 768px wide or less.
+  * It changes the Horizontal view of navigation bar to a column view where Website logo
+  * and navigation links will come under each other.
+  */
+@media screen and (max-width: 768px) {
+  .mainNav-container {
+    flex-direction: column;
+  }
+
+  .navMenu {
+    flex-direction: column;
+  }
+
+  .navMenu__item {
+    list-style: none;
+    margin: 0;
+    margin-top: 20px;
+  }
+
+  .navMenu__item--isDivider {
+    display: none;
+  }
+}
+
+/*
+ * This CSS styling is applied only when the browser window is 624px wide or less.
+ */
+@media screen and (max-width: 624px) {
+  /*
+   * It changes the size of the heading on the webpage to 2em.
+   */
+  .hero__heading h1 {
+    font-size: 2em;
+  }
+
+  /*
+   * It changes the view of the webpage subheading in the box.
+   */
+  .overlapHero{
+    padding: 15px;
+    margin-top: -30px;
+  }
+}
+
+/*
+ * This CSS styling is applied only when the browser window is 1004px wide or less.
+ */
+@media screen and (max-width: 1004px) {
+
+/*
+ * It makes the "number of people" input box grow a bit bigger 
+ * as compared to other flexible elements on the page.
+ */
+  .ingredientsCalculator__form__input {
+    flex-grow: 2;
+  }
+
+ /*
+ * It adds extra top spacing for "Calculate" button.
+ */
+  .ingredientsCalculator__form__btn {
+    margin-top: 6px;
+  }
+}
+
+/*
+ * This CSS styling is applied only when the browser window is 560px wide or less.
+ */
+@media screen and (max-width: 560px) {
+  /*
+   * It makes the left and right section of the page come under each other instead of being horizontally aligned.
+   */
+  .section-2-column {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /*
+   * It makes the recipe navigation container to take whole page on the space
+   * instead of aligning itself on the left section of the page.
+   */
+  .sideNavigation {
+    width: 100%;
+    overflow: auto;
+    max-height: 500px;
+  }
+
+  /*
+   * It aligns all content in the recipe navigation container to center.
+   */
+  .recipesNav {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  /*
+   * It adds some left spacing between each item in the recipe navigation and sets width to 40%.
+   */
+  .recipeNav__item {
+    margin-left: 10px;
+    width: 40%;
+  }
+
+  /*
+   * It hides the description shown on card.
+   */
+  .card-description {
+    display: none;
+  }
+
+  /*
+   * It changes the font-size of the title of the card.
+   */
+  .card-title {
+    font-size: 1.2em;
+  }
+
+  /*
+   * It adds a top spacing of 10px on recipe detail container.
+   * Earlier recipe content used to take 60% of the width on the page, now it uses full width of the page.
+   */
+  .recipeDetail {
+    margin-top: 10px;
+    width: 100%;
+  }
+}

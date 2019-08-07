@@ -1,0 +1,206 @@
+{
+  "recipes": {
+    "1": {
+      "id": 1,
+      "title": "Healthy Oates",
+      "description": "With just 5 simple ingredients you can make the most delicious stove-top oatmeal recipe on the planet. This oatmeal recipe is a staple in my home and I often add other flavors and add-ins to make it even more delicious. PS: it’s refined sugar-free and naturally gluten-free!",
+      "thumb_img": "recipe_1_thumb.png",
+      "full_img": "recipe_1.png",
+      "for_people": 2,
+      "ingredients": [
+        {
+          "unit": "cup",
+          "quantity": "1",
+          "name": "rolled oats"
+        },
+        {
+          "unit": "cup",
+          "quantity": "2",
+          "name": "unsweetened almond milk"
+        },
+        {
+          "unit": "",
+          "quantity": "1",
+          "name": "medium banana, mashed"
+        },
+        {
+          "unit": "teaspoon",
+          "quantity": "2",
+          "name": "vanilla extract"
+        },
+        {
+          "unit": "teaspoon",
+          "quantity": "2",
+          "name": "cinnamon"
+        }
+      ],
+      "instructions": [
+        {
+          "description": "Combine all ingredients into a small saucepan and turn heat to medium/high.",
+          "order": 1,
+          "time": {
+            "unit": "hour",
+            "value": 1
+          }
+        },
+        {
+          "description": "Bring to a boil. Then, turn heat down to low/medium and continually stir for around 3-5 minutes as the oatmeal cooks and thickens.",
+          "order": 2
+        },
+        {
+          "description": "Once oatmeal is at desired consistency, remove from heat and serve immediately.",
+          "order": 3
+        }
+      ]
+    },
+    "2": {
+      "id": 2,
+      "title": "Spanish Paella",
+      "description": "With just 5 simple ingredients you can make the most delicious stove-top oatmeal recipe on the planet. This oatmeal recipe is a staple in my home and I often add other flavors and add-ins to make it even more delicious. PS: it’s refined sugar-free and naturally gluten-free!",
+      "thumb_img": "recipe_2_thumb.png",
+      "full_img": null,
+      "for_people": 3,
+      "ingredients": [
+        {
+          "unit": "g",
+          "quantity": "100",
+          "name": "pasta"
+        },
+        {
+          "unit": "g",
+          "quantity": "200",
+          "name": "shrimp"
+        },
+        {
+          "unit": "teaspoon",
+          "quantity": "2",
+          "name": "olive oil"
+        }
+      ],
+      "instructions": [
+        {
+          "description": "Combine all ingredients into a small saucepan and turn heat to medium/high.",
+          "order": 1,
+          "time": {
+            "unit": "hour",
+            "value": 1
+          }
+        },
+        {
+          "description": "Bring to a boil. Then, turn heat down to low/medium and continually stir for around 3-5 minutes as the oatmeal cooks and thickens.",
+          "order": 2
+        },
+        {
+          "description": "Once the srhimps was boiled, remove from heat and serve immediately.",
+          "order": 3
+        }
+      ]
+    },
+    "3": {
+      "id": 3,
+      "title": "Healthy Oates 2",
+      "description": "With just 5 simple ingredients you can make the most delicious stove-top oatmeal recipe on the planet. This oatmeal recipe is a staple in my home and I often add other flavors and add-ins to make it even more delicious. PS: it’s refined sugar-free and naturally gluten-free!",
+      "thumb_img": "recipe_1_thumb.png",
+      "full_img": "recipe_1.png",
+      "for_people": 5,
+      "ingredients": [
+        {
+          "unit": "cup",
+          "quantity": "1",
+          "name": "rolled oats"
+        },
+        {
+          "unit": "cup",
+          "quantity": "2",
+          "name": "unsweetened almond milk"
+        },
+        {
+          "unit": "",
+          "quantity": "1",
+          "name": "medium banana, mashed"
+        },
+        {
+          "unit": "teaspoon",
+          "quantity": "2",
+          "name": "vanilla extract"
+        },
+        {
+          "unit": "teaspoon",
+          "quantity": "2",
+          "name": "cinnamon"
+        }
+      ],
+      "instructions": [
+        {
+          "description": "Combine all ingredients into a small saucepan and turn heat to medium/high.",
+          "order": 1,
+          "time": {
+            "unit": "hour",
+            "value": 1
+          }
+        },
+        {
+          "description": "Bring to a boil. Then, turn heat down to low/medium and continually stir for around 3-5 minutes as the oatmeal cooks and thickens.",
+          "order": 2
+        },
+        {
+          "description": "Once oatmeal is at desired consistency, remove from heat and serve immediately.",
+          "order": 3
+        }
+      ]
+    },
+    "4": {
+      "id": 4,
+      "title": "Healthy Oates 4",
+      "description": "Healthy Oates version 4",
+      "thumb_img": "recipe_1_thumb.png",
+      "full_img": "recipe_1.png",
+      "for_people": 1,
+      "ingredients": [
+        {
+          "unit": "cup",
+          "quantity": "1",
+          "name": "rolled oats"
+        },
+        {
+          "unit": "cup",
+          "quantity": "2",
+          "name": "unsweetened almond milk"
+        },
+        {
+          "unit": "",
+          "quantity": "1",
+          "name": "medium banana, mashed"
+        },
+        {
+          "unit": "teaspoon",
+          "quantity": "2",
+          "name": "vanilla extract"
+        },
+        {
+          "unit": "teaspoon",
+          "quantity": "2",
+          "name": "cinnamon"
+        }
+      ],
+      "instructions": [
+        {
+          "description": "Combine all ingredients into a small saucepan and turn heat to medium/high.",
+          "order": 1,
+          "time": {
+            "unit": "hour",
+            "value": 1
+          }
+        },
+        {
+          "description": "Bring to a boil. Then, turn heat down to low/medium and continually stir for around 3-5 minutes as the oatmeal cooks and thickens.",
+          "order": 2
+        },
+        {
+          "description": "Once oatmeal is at desired consistency, remove from heat and serve immediately.",
+          "order": 3
+        }
+      ]
+    }
+  }
+}
